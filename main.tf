@@ -2,8 +2,7 @@ resource "aws_vpc" "example" {
   cidr_block = var.cidr_block
 }
 
-# Create User
-resource "aws_iam_user" "user_A" {
+resource "aws_iam_user" "user" {
   name = var.user_name
   path = "/"
 
